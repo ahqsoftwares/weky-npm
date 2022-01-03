@@ -6,7 +6,7 @@ const db = new datas("./some-ahq.json", {
         interval: 24 * 60 * 60 * 1000,
         folder: './backups/'
     }
-})
+});
 const Discord = require('discord.js');
 const functions = require('../../functions/function');
 

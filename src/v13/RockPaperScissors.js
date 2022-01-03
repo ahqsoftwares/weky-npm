@@ -1,5 +1,12 @@
 const data = new Set();
-const db = require('quick.db');
+const datas = require('easy-json-database');
+const db = new datas("./some-ahq.json", {
+    snapshots: {
+        enabled: true,
+        interval: 24 * 60 * 60 * 1000,
+        folder: './backups/'
+    }
+});
 const Discord = require('discord.js');
 const functions = require('../../functions/function');
 
